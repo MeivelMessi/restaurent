@@ -1,0 +1,1023 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    
+}
+section{
+    padding: 30px;
+
+}
+header{
+    position: relative;
+    font-weight: lighter;
+    color: yellowgreen;
+    display: block;
+    justify-content: space-between;
+     letter-spacing: 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+.toggle{
+    height: 25px;
+    width: 25px;
+    background: url(menu-1.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    z-index: 10000;
+    left: 1230px;
+    bottom:36px ;
+}
+.toggle.active{
+    background: url(close-1.png);
+    background-size :17px;
+    background-repeat: no-repeat;
+    
+}
+.n{
+    position: absolute;
+    display: flex;
+    right: 50px;
+    opacity: 0;
+    visibility: hidden;
+}
+.n li{
+    list-style: none;
+    position: relative;
+    margin: 0 10px;
+}
+a{
+    text-decoration: none;
+    padding: 17px;
+    color: yellowgreen;
+    font-size: 19px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    
+}
+.n.active{
+    visibility: visible;
+    opacity: 1;
+
+}
+li::after{
+    height: 2px;
+    width: 0;
+    position: absolute;
+    content: '';
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: 2s;
+
+}
+li:hover::after{
+  
+    width: 100%;
+    
+    
+}
+a:hover{
+    color:red;
+}
+.imgbox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pizza{
+    
+    left: 760px;
+    position: absolute;
+    padding: 24px;
+    top: 30px;
+    overflow: hidden;
+}
+.frist{
+    position: absolute;
+    padding-top:60px ;
+    font-size: 40px;
+    font-weight: bolder;
+    color: gold;
+    top: 60px;
+    left: 310px;
+    letter-spacing: 6px;
+}
+.f{
+    position:absolute;
+    top: 70px;
+    padding-top: 130px;
+    font-size: 16px;
+    font-weight: bold;
+    left:  80px;
+    letter-spacing: 2px;
+    margin-right: 550px;
+    line-height: 40px;
+    color:black;
+
+}
+.ij{
+    position: relative;
+    height: 350px;
+    width:100%;
+    
+
+}
+.sec{
+    color: skyblue;
+    position: absolute;
+    top: 330px;
+    left: 160px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+
+}
+.thrid{
+    color: red;
+    position: absolute;
+    top: 330px;
+    left: 350px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+
+}
+.now{
+        border: 2px solid black;
+        color:white;
+        position: absolute;
+        top: 390px;
+        left: 340px;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        height:40px;
+        width: 120px;
+        border-radius: 18px;
+        background-color: black;
+        
+    
+    }
+    .now:hover{
+                 background-color:red;
+                 color: #FFF;
+                }
+ .pizzacl{
+     position: absolute;
+     color: black;
+     font-weight: bold;
+     letter-spacing: 5px;
+     font-size: 35px;
+     top: 460px;
+     left: 240px;
+     padding-bottom: 60px;
+ }
+
+.cart{
+    height: 390px;
+    width: 200px;
+    left: 10px;
+    top:500px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius:10px;
+    cursor: pointer;
+    z-index: 2;
+    padding-bottom: 60px;
+    
+}
+
+.m{
+    height: 200px;
+    width: 170px;
+    position: absolute;
+    bottom: 230px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 12px rgba(0,0,0,0.3);
+    left: 15px;
+    z-index: 1000;
+    
+}
+ .order{
+    
+    top: 330px;
+    height: 40px;
+    width: 130px;
+    border: 2px solid black;
+    color:white;
+    position: absolute;
+    left: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 18px;
+    background-color: yellow;
+    
+}
+.order:hover{
+    color: white;
+    background-color: red;
+}
+.Chickenpizza{
+    position: absolute;
+    top: 190px;
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'inkfree',serif;
+    left: 10px;
+    color:black;
+}
+.love{
+    position: absolute;
+    top: 230px;
+    line-height: 20px;
+    padding: 13px;
+    color: lawngreen;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.cu{
+    position: absolute;
+    top: 290px;
+    padding: 13px;
+    color: darkcyan;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+.cartone{
+    height: 390px;
+width: 200px;
+left: 300px;
+top:110px;
+position: relative;
+box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+border-radius:10px;
+cursor: pointer;
+z-index: 2;
+transform: translate(120deg);
+transition: 4s;
+}
+.Chickenpizzaone{
+    position: absolute;
+    top: 180px;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family:'inkfree',serif;
+    left: 10px;
+    color:black;
+
+}
+.loveone{
+    position: absolute;
+    top: 230px;
+    line-height: 20px;
+    padding: 13px;
+    color: yellow;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.cuone{
+    position: absolute;
+    top: 290px;
+    padding: 13px;
+    color: red;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+.orderone{
+    
+    top: 330px;
+    height: 40px;
+    width: 130px;
+    border: 2px solid black;
+    color:white;
+    position: absolute;
+    left: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 18px;
+    background-color: greenyellow;
+    
+}
+.orderone:hover{
+    
+    background-color:gold;
+}
+
+.carttwo{
+    height: 390px;
+width: 200px;
+left: 580px;
+bottom:280px;
+position: relative;
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+border-radius:10px;
+cursor: pointer;
+z-index: 2;
+
+}
+.lovetwo{
+    position: absolute;
+    top: 230px;
+    line-height: 20px;
+    padding: 13px;
+    color: green;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.cutwo{
+    position: absolute;
+    top: 290px;
+    padding: 13px;
+    color: brown;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+.ordertwo{
+    
+    top: 330px;
+    height: 40px;
+    width: 130px;
+    border: 2px solid black;
+    color:white;
+    position: absolute;
+    left: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 18px;
+    background-color: green;
+    
+}
+.ordertwo:hover{
+    
+    background-color:red;
+}
+.cartthree{
+    height: 390px;
+width: 200px;
+left: 850px;
+bottom:670px;
+position: relative;
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+border-radius:10px;
+cursor: pointer;
+z-index: 2;
+
+}
+.lovethree{
+    position: absolute;
+    top: 230px;
+    line-height: 20px;
+    padding: 13px;
+    color: blue;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.cutthree{
+    position: absolute;
+    top: 290px;
+    padding: 13px;
+    color: gold;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+.orderthree{
+    
+    top: 330px;
+    height: 40px;
+    width: 130px;
+    border: 2px solid black;
+    color:white;
+    position: absolute;
+    left: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 18px;
+    background-color: skyblue;
+    
+}
+.orderthree:hover{
+    
+    background-color:violet;
+}
+
+.cartfour{
+    height: 390px;
+width: 200px;
+left: 1090px;
+bottom:1060px;
+position: relative;
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+border-radius:10px;
+cursor: pointer;
+z-index: 2;
+
+}
+.lovefour{
+    position: absolute;
+    top: 230px;
+    line-height: 20px;
+    padding: 13px;
+    color: red;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.cutfour{
+    position: absolute;
+    top: 290px;
+    padding: 13px;
+    color: darkturquoise;
+    line-height: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+.orderfour{
+    
+    top: 330px;
+    height: 40px;
+    width: 130px;
+    border: 2px solid black;
+    color:white;
+    position: absolute;
+    left: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 18px;
+    background-color: black;
+    
+}
+.orderfour:hover{
+    
+    background-color:black;
+}
+.chicke{
+    position: relative;
+    bottom: 1000px ;
+}
+.cone{
+    position: absolute;
+    padding-top: 60px;
+    font-weight: bolder;
+    color:gold;
+    letter-spacing: 1px;
+    font-size: 35px;
+    left: 300px;
+}
+.cb{
+    position: absolute;
+    top: 130px;
+    margin-right:600px ;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: black;
+    font-weight: bold;
+    font-size:17px ;
+    left: 45px;
+}
+.bn{
+    position: relative;
+    height: 400px;
+    width: 500px;
+    left: 700px;
+    top: 60px;
+ 
+
+}
+.se{
+    color: lawngreen;
+    position: absolute;
+    top:270px;
+    left: 160px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+
+}
+.thri{
+    color:black;
+    position: absolute;
+    top: 270px;
+    left: 350px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+
+}
+.no{
+    border: 2px solid black;
+    color:white;
+    position: absolute;
+    top: 330px;
+    left: 300px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    height:40px;
+    width: 120px;
+    border-radius: 18px;
+    background-color: brown;
+    
+
+}
+.no:hover{
+             background-color:red;
+             color: #FFF;
+            }
+.cartfou{
+    height: 390px;
+    width: 200px;
+    top: 200px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius:10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.cartfou{
+    height: 390px;
+    width: 200px;
+    top: 200px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius:10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.cartthre{
+    height: 390px;
+width: 200px;
+left: 280px;
+bottom:190px;
+position: relative;
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+border-radius:10px;
+cursor: pointer;
+z-index: 2;
+
+}
+.carttw{
+    height: 390px;
+width: 200px;
+left: 560px;
+bottom:580px;
+position: relative;
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+border-radius:10px;
+cursor: pointer;
+z-index: 2;
+
+}
+.carton{
+    height: 390px;
+width: 200px;
+left: 850px;
+bottom: 970px;
+position: relative;
+box-shadow: 0 15px 20px rgba(0,0,0,0.3);
+border-radius:10px;
+cursor: pointer;
+z-index: 2;
+
+}
+.car{
+    height: 390px;
+    width: 200px;
+    left: 1100px;
+    bottom:1360px;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-radius:10px;
+    cursor: pointer;
+    z-index: 2;
+    padding-bottom: 60px;
+    
+}
+.ordertw{
+    
+    top: 330px;
+    height: 40px;
+    width: 130px;
+    border: 2px solid black;
+    color:white;
+    position: absolute;
+    left: 40px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 18px;
+    background-color: red;
+    
+}
+.ordertw:hover{
+    background-color: powderblue;
+}
+.lovetw{
+    position: relative;
+    top: 230px;
+    line-height: 20px;
+    padding: 13px;
+    color: springgreen;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.tg{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1450px;
+}
+.meivel{
+    position: absolute;
+    height: 500px;
+    width: 700px; 
+    left: 600px;
+    
+   
+}
+.ll{
+    position: absolute;
+    bottom: 270px;
+    left: 200px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 35px;
+    color: gold;
+    
+}
+.time{
+
+    position: absolute;
+     background: url("321.jpg");
+    height: 600px;
+    width: 1250px;
+    top: 500px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   background-size: cover;
+  
+  }
+  .cr{
+      position: absolute;
+      height: 550px;
+      width:1249.5px;
+      background:rgba(255,255,255,.07);
+      box-shadow: 40px 40px 40px rgba(0,0,0,0.2);
+      backdrop-filter: blur(5px);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      
+  }
+  .op{
+      position:absolute;
+      left: 70px;
+      bottom: 406px;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 3px;
+      
+
+  }
+.ui{
+    position:absolute;
+      left: 660px;
+      bottom: 408px;
+      font-size: 22px;
+      font-weight: bold;
+      color: white;
+      letter-spacing: 3px;
+}
+.np{
+    position: absolute;
+    left:250px ;
+    bottom:405px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.pn{
+    position: absolute;
+    left:860px ;
+    bottom:405px;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+.yy{
+    position: absolute;
+    bottom:505px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+
+}
+.ff{
+    position: absolute;
+    top:480px;
+    color:white;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 3px;
+    right:800px;
+
+}
+.jj{
+
+    position: absolute;
+    top:480px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    right:160px;
+    
+}
+.su{
+     position: relative;
+    color:white;
+     font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    left: 30px;
+    top: 25px;
+    margin-right: 100px;
+    
+}
+.hnn{
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    left: 30px;
+    top: 25px;
+    margin-right:770px;
+    
+}
+.chef{
+    height: 600px;
+   width: 100%;
+   position: relative;
+    background:url(123.jpg);
+    top: 400px;
+    background-size: cover;
+    
+
+
+}
+.kkl{
+    color: white;
+    left: 550px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 2px;
+    top: 20px;
+}
+.cjj{
+    height: 490px;
+    width: 270px;
+    background: rgba(255,255,255,.07);
+    position: absolute;
+    backdrop-filter: blur(8px);
+    top: 60px;
+    left: 20px;
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.2);
+    border-radius: 11px;
+}
+.ooo{
+    height: 260px;
+    width: 210px;
+    position: absolute;
+    left: 33px;
+    top: 30px;
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.2);
+
+}
+.lll{
+    position: absolute;
+    color: white;
+    left: 60px;
+    top: 300px;
+    font-weight: bold;
+    font-size: 26px;
+}
+.kkk{
+    position: absolute;
+    color: white;
+    left: 50px;
+    top: 360px;
+    font-weight: lighter;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.mmm{
+    position: absolute;
+    color: white;
+    left: 40px;
+    top: 430px;
+   font-size: 22px;
+   font-weight: bold;
+   letter-spacing: 1px;
+
+}
+.cjjj{
+    height: 490px;
+    width:270px;
+    background: rgba(255,255,255,.07);
+    position: absolute;
+    backdrop-filter: blur(11px);
+    top: 60px;
+    left: 350px;
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+.ssss{
+       position: absolute;
+        color: white;
+        left: 170px;
+        top: 430px;
+       font-size: 16px;
+       font-weight: bold;
+    
+}
+.cjjjj{
+    height: 490px;
+    width:270px;
+    background: rgba(255,255,255,.07);
+    position: absolute;
+    backdrop-filter: blur(11px);
+    top: 60px;
+    left: 680px;
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+.cjjjjj{
+    height: 490px;
+    width:270px;
+    background: rgba(255,255,255,.07);
+    position: absolute;
+    backdrop-filter: blur(11px);
+    top: 60px;
+    left: 1000px;
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+.feed{
+    position: absolute;
+    left: 430px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+.hll{
+    position: absolute;
+    top: 800px;
+    height: 600px;
+    width: 100%;
+    background:url(123456.jpg);
+    background-size: cover;
+
+}
+.nnnnn{
+    position: absolute;
+    height: 500px;
+    width: 1000px;
+    background:rgba(255,255,255,.06);
+    box-shadow: 25px 25px 25px rgba(0,0,0,0.2);
+    backdrop-filter: blur(7px);
+    border-radius: 8px;
+    left: 139px;
+   top: 50px;
+
+}
+.mnnk{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    top: 40px;
+    left: 30px;
+
+}
+.klklkl input{
+    left: 200px;
+    position: absolute;
+    padding: 5px;
+
+    border: none;
+}
+.mnnkk{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    top: 100px;
+    left: 30px;
+
+}
+.mnnkk{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    top: 100px;
+    left: 30px;
+
+}
+
+.mnnkkk{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    top: 160px;
+    left: 30px;
+
+}
+.mnnkkkk{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    top: 230px;
+    left: 30px;
+
+}
+.jkjk{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    top: 250px;
+    left: 30px;
+
+}
+textarea{
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    top: 230px;
+    left: 210px;
+    border: none;
+}
+.klklkll input{
+    position: absolute;
+    left: 210px;
+    top: 350px;
+    border: none;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: black;
+    cursor: pointer;
+
+
+}
+.klklklll input{
+    position: absolute;
+    top: 355px;
+    left: 290px;
+    border: none;
+    cursor: pointer;
+
+
+}
+.nmnm{
+    position: absolute;
+    top: 455px;
+    left: 290px;
+    color: white;
+    letter-spacing: 3px;
+
+}
